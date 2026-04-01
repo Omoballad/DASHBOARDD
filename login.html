@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="login.css" />
+
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="form-wrapper">
+          <a href="#" class="back">← Back to dashboard</a>
+
+          <h2>Sign In</h2>
+          <p>Enter your email and password to sign in!</p>
+
+          <button class="google-btn">
+            <img src="https://img.icons8.com/color/16/google-logo.png" />
+            Sign in with Google
+          </button>
+
+          <div class="divider">
+            <hr />
+            <span>or</span>
+            <hr />
+          </div>
+
+          <form>
+            <label>Email*</label>
+            <input type="email" placeholder="mail@simmmple.com" required />
+
+            <label>Password*</label>
+            <div class="password-box">
+              <input type="password" placeholder="Min. 8 characters" required />
+              <span class="eye">👁</span>
+            </div>
+
+            <div class="options">
+              <label class="remember">
+                <input type="checkbox" /> Keep me logged in
+              </label>
+              <a href="#" class="forgot">Forgot password?</a>
+            </div>
+
+            <button class="signin-btn">Sign In</button>
+          </form>
+
+          <p class="signup">
+            Not registered yet? <a href="#">Create an Account</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="overlay">
+          <div class="logo">
+            <img src="/Vector.png" alt="logo">
+          </div>
+          <h1>Horizon <span>UI</span></h1>
+
+          <div class="cta">
+            Learn more about Horizon UI on <br/>
+           <a href="https://horizon-ui.com" target="_blank" rel="noopener noreferrer">horizon-ui.com</a>
+          </div>
+
+          <div class="bottom-links">
+            <a href="#">Marketplace</a>
+            <a href="#">License</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script>
+  const eye = document.querySelector(".eye");
+  const password = document.querySelector(".password-box input");
+
+  eye.addEventListener("click", () => {
+    if (password.type === "password") {
+      password.type = "text";
+    } else {
+      password.type = "password";
+    }
+  });
+  
+</script>
+  </body>
+</html>

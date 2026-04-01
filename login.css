@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f4f7fe;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 400px;
+}
+
+.back {
+  font-size: 14px;
+  color: #a0aec0;
+  text-decoration: none;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #2b3674;
+}
+
+p {
+  color: #a3aed0;
+  margin: 8px 0 20px;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  background: #f7fafc;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.divider hr {
+  flex: 1;
+  border: 0;
+  height: 1px;
+  background: #e2e8f0;
+  margin: 0;
+}
+
+.divider span {
+  color: #a0aec0;
+  font-size: 14px;
+  white-space: nowrap;
+  padding: 0 8px;
+}
+
+@media (max-width: 600px) {
+  .divider {
+    gap: 8px;
+    margin: 16px 0;
+  }
+  .divider span {
+    font-size: 12px;
+    padding: 0 6px;
+  }
+  .divider hr {
+    height: 1px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .divider {
+    margin: 24px 0;
+  }
+  .divider span {
+    font-size: 15px;
+  }
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+  color: #2b3674;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  outline: none;
+}
+
+.password-box {
+  position: relative;
+}
+
+.password-box .eye {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.options input {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  color: #2b3674;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.options .forgot {
+  text-decoration: none;
+  color: #6b46c1;
+  font-weight: 500;
+}
+
+@media (max-width: 500px) {
+  .options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .options .forgot {
+    margin-top: 8px;
+  }
+}
+
+.checkbox {
+  text-decoration: none;
+  color: #6b46c1;
+}
+
+.forgot {
+  text-decoration: none;
+  color: #6b46c1;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 12px;
+  background: #6b46c1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.signup {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.signup a {
+  color: #6b46c1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .signup {
+    font-size: 13px;
+    margin-top: 12px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .signup {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}
+
+.right {
+  flex: 1;
+  background: linear-gradient(135deg, #5f2eea, #00c6ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.overlay {
+  text-align: center;
+}
+
+.logo {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+h1 span {
+  border: 1px solid white;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.cta {
+  height: 80px;
+  margin-top: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  border-radius: 12px;
+}
+.cta a {
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.bottom-links {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.bottom-links a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .right {
+    height: 300px;
+    border-radius: 0;
+  }
+
+  .bottom-links {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  .form-wrapper {
+    max-width: 100%;
+  }
+}
